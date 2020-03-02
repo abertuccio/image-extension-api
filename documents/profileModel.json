@@ -1,0 +1,122 @@
+{
+	"result": {
+		"data": {
+			"customer": "PULPOU",
+			"username": "GABY",
+			"group": null,
+			"sites": [{
+					"portal_name": "Instagram",
+					"portal_folder_name": "instagram",
+					"category": "PORTAL",
+					"availableFolders": [{
+						"folder_name": null,
+						"availableScripts": [{
+							"script_name": "generalActions",
+							"general_styles": "generalStyles",
+							"availableRegexs": [{
+								"regex": "^(http([s]?):\/\/([w]{3}[.]]?)?instagram.com(([\/]{1}).*)?)$"
+							}]
+						}]
+					}],
+					"availibleActions": [{
+							"category": "LIST",
+							"availableFolders": [{
+								"folder_name": "list",
+								"category_styles": "categoryStylesList",
+								"availableScripts": [{
+									"script_name": "list",
+									"styles_name": "list",
+									"availableRegexs": [{
+										"regex": "^(http([s]?):\/\/([w]{3}[.]]?)?instagram.com\/explore(([\/]{1}).*)?)$"
+									}]
+								}]
+							}]
+						},
+						{
+							"category": "PRODUCT",
+							"availableFolders": [{
+								"folder_name": "product",
+								"category_styles": "categoryStylesProduct",
+								"availableScripts": [{
+									"script_name": "product",
+									"styles_name": "product",
+									"availableRegexs": [{
+										"regex": "^(http([s]?):\/\/([w]{3}[.]]?)?instagram.com\/p(([\/]{1}).*)?)$"
+									}]
+								}]
+							}]
+						}
+					]
+				},
+				{
+					"portal_name": "Magalu",
+					"portal_folder_name": "magalu",
+					"category": "PORTAL",
+					"availableFolders": [{
+						"folder_name": "",
+						"availableScripts": [{
+							"script_name": "generalActions",
+							"general_styles": "generalStyles",
+							"availableRegexs": [{
+									"regex": "^(http([s]?):\/\/([w]{3}[.]?)?magazineluiza.com.br(([\/]{1}).*)?)$"
+								},
+								{
+									"regex": "^(http([s]?):\/\/(.*)?magazineluiza.com.br\/(.*)?)$"
+								}
+							]
+						}]
+					}],
+					"availibleActions": [{
+							"category": "PRODUCT",
+							"availableFolders": [{
+								"folder_name": "product",
+								"category_styles": "categoryProduct",
+								"availableScripts": [{
+									"script_name": "product",
+									"styles_name": "product",
+									"availableRegexs": [{
+										"regex": "^(http([s]?):\/\/([w]{3}[.]]?)?magazineluiza.com.br\/.*(\/p\/)(.*)?)$"
+									}]
+								}]
+							}]
+						},
+						{
+							"category": "LIST",
+							"availableFolders": [{
+								"folder_name": "list",
+								"category_styles": "categoryList",
+								"availableScripts": [{
+										"script_name": "list",
+										"styles_name": "list",
+										"availableRegexs": [{
+												"regex": "^(http([s]?):\/\/([w]{3}[.]]?)?magazineluiza.com.br\/.*(\/l\/)(.*)?)$"
+											},
+											{
+												"regex": "^(http([s]?):\/\/([w]{3}[.]]?)?magazineluiza.com.br\/(selecao\/)(.*)?)$"
+											}
+										]
+									},
+									{
+										"script_name": "search",
+										"styles_name": null,
+										"availableRegexs": [{
+												"regex": "^(http([s]?):\/\/([w]{3}[.]]?)?magazineluiza.com.br/.*(\/.*\/s\/)(.*)?)$"
+											},
+											{
+												"regex": "^(http([s]?):\/\/(busca.{1})magazineluiza.com.br\/(.*)?)$"
+											}
+										]
+									}
+								]
+							}]
+​
+						}
+					]
+				}
+			]
+		},
+		"code": "",
+		"message": "",
+		"status": "ok"
+	}
+}

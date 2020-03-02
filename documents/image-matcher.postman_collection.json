@@ -1,0 +1,217 @@
+{
+	"id": "416a451d-778c-6802-e36d-852dacd51d35",
+	"name": "image-matcher",
+	"description": "",
+	"order": [
+		"0f818a8a-4a53-a7bf-3a77-ffc6a4e7a4a6",
+		"679206d7-2489-b54f-641d-66cf2885ae22",
+		"40007b88-7acf-2d23-0b4e-6e69f1ad189d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1567782799976,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0f818a8a-4a53-a7bf-3a77-ffc6a4e7a4a6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://analisis-imagenes.portegno.com:8080/download",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567783955776,
+			"name": "download",
+			"description": "",
+			"collectionId": "416a451d-778c-6802-e36d-852dacd51d35",
+			"responses": [],
+			"rawModeData": " {\n    \"sessionId\": \"729812326\",\n    \"kindOfStorage\": \"suspected\",\n    \"storageName\": \"magalu\",\n    \"storageData\": [\n        {\n            \"articleId\": \"\",\n            \"title\": \"\", \"link\": \"\",\n            \"sellerId\": \"\", \"categoryId\": \"\",\n            \"images\": [\n                {\n                    \"imageId\": \"\",\n                    \"url\": \"https://a-static.mlcdn.com.br/618x463/kit-de-tratamento-completo-joico-blonde-life-brightening-p/donnabeleza/6143912958/357df329991c0186d94f13dc0731726a.jpg\"\n                }\n            ]\n        }\n    ]\n}"
+		},
+		{
+			"id": "40007b88-7acf-2d23-0b4e-6e69f1ad189d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://analisis-imagenes.portegno.com:8080/show-images-categories?storageX=suspected-magalu2&categoriesStorageX=xxxxxx",
+			"queryParams": [
+				{
+					"key": "storageX",
+					"value": "suspected-magalu2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "categoriesStorageX",
+					"value": "xxxxxx",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567792191764,
+			"name": "show-images-categories",
+			"description": "",
+			"collectionId": "416a451d-778c-6802-e36d-852dacd51d35",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 291,
+					"headers": [
+						{
+							"name": "access-control-allow-origin",
+							"key": "access-control-allow-origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "connection",
+							"key": "connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "490",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 06 Sep 2019 16:38:26 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "nginx/1.14.0 (Ubuntu)",
+							"description": "A name for the server"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"imageName\": \"4763d0574326a2823310a33149ca0ef965a52b1315c76066a8c4c76a042e5b57.jpg\", \"categories\": [{\"category\": \"carton\", \"accuracy\": \"0.29153052\", \"idCategory\": \"n02971356\"}, {\"category\": \"balloon\", \"accuracy\": \"0.15104225\", \"idCategory\": \"n02782093\"}, {\"category\": \"crate\", \"accuracy\": \"0.088311575\", \"idCategory\": \"n03127925\"}, {\"category\": \"parachute\", \"accuracy\": \"0.06899083\", \"idCategory\": \"n03888257\"}, {\"category\": \"chest\", \"accuracy\": \"0.06446755\", \"idCategory\": \"n03014705\"}]}\n",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "show-images-categories",
+					"id": "c070b3e5-e13f-eb95-73aa-05e09c847ee5",
+					"request": {
+						"url": "https://analisis-imagenes.portegno.com:8080/show-images-categories?storageX=suspected-magalu2&categoriesStorageX=xxxxxx",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [
+							{
+								"key": "storageX",
+								"value": "suspected-magalu2",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							},
+							{
+								"key": "categoriesStorageX",
+								"value": "xxxxxx",
+								"equals": true,
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headerData": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Content-Type: application/json\n",
+						"data": "",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				}
+			]
+		},
+		{
+			"id": "679206d7-2489-b54f-641d-66cf2885ae22",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://analisis-imagenes.portegno.com:8080/groups",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567784641782,
+			"name": "groups",
+			"description": "",
+			"collectionId": "416a451d-778c-6802-e36d-852dacd51d35",
+			"responses": [],
+			"rawModeData": ""
+		}
+	]
+}

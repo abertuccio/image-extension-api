@@ -1,0 +1,155 @@
+
+
+CREATE TABLE IF NOT EXISTS web_buddy.users(
+  id_user int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  username varchar(100) NOT NULL COMMENT 'nombre de usuario',
+  password varchar(1000) DEFAULT NULL COMMENT '',
+  random varchar(1000) DEFAULT NULL COMMENT '',
+  first_name varchar(100) NOT NULL COMMENT 'nombre de usuario',
+  last_name varchar(100) NOT NULL COMMENT 'nombre de usuario',
+  token varchar(1000) DEFAULT NULL COMMENT '',
+  token_time varchar(500) DEFAULT NULL COMMENT '',
+  token_active int(11)  DEFAULT 0 COMMENT 'token ativos = 1, desactivo = 0',
+  session_failed_attempts int(11) DEFAULT 0 COMMENT '',
+  last_login date DEFAULT NULL COMMENT 'Fecha ultimo login',
+  last_login_failed date DEFAULT NULL COMMENT 'Fecha ultimo intento fallido de login',
+  email varchar(500) DEFAULT NULL COMMENT 'Correo electronico',
+  start_date date NOT NULL COMMENT 'Fecha alta',
+  active int(2) DEFAULT 1 COMMENT 'usuarios ativos = 1 desactivos, temporalmente = 2, eliminados = 0',
+  PRIMARY KEY (id_user)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabla de users';
+
+CREATE TABLE IF NOT EXISTS web_buddy.customers (
+  id_customer int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  company_name varchar(50) DEFAULT NULL COMMENT 'nombre comercial',  
+  Legal_contact_name varchar(100) NOT NULL COMMENT 'nombre de usuario',
+  email varchar(500) DEFAULT NULL COMMENT 'Correo electronico',
+  active int(2) DEFAULT 1 COMMENT 'cliente activo',
+  start_date date DEFAULT NULL COMMENT 'Fecha alta de cliente',
+  lock_date date DEFAULT NULL COMMENT 'Fecha bloque de cliente',
+  PRIMARY KEY (id_customer)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabla de clientes';
+
+CREATE TABLE IF NOT EXISTS web_buddy.customerUsers (
+  id_customer_users int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  id_user int(11) NOT NULL,
+  id_customer int(11) NOT NULL,
+  PRIMARY KEY (id_customer_users)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Relacion de clientes y usuarios';
+
+CREATE TABLE IF NOT EXISTS web_buddy.portals (
+  id_portal int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  name varchar(100) DEFAULT NULL COMMENT 'nombre ',	
+  domain varchar(1000) NOT NULL COMMENT 'dominio del sitio',	
+	country varchar(500) DEFAULT NULL COMMENT 'Pais',
+  portal_folder_name varchar(100) DEFAULT NULL COMMENT '',
+  PRIMARY KEY (id_portal)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabla de portales';
+
+INSERT INTO web_buddy.portals(name, domain,  portal_folder_name) value ('Instagram', 'instagram.com', 'instagram');
+INSERT INTO web_buddy.portals(name, domain,  portal_folder_name) value ('Mercado Libre', 'mercadolibre.com', 'mercadolibre');
+INSERT INTO web_buddy.portals(name, domain,  portal_folder_name) value ('Aliexpress','aliexpress.com', 'aliexpress');
+INSERT INTO web_buddy.portals(name, domain,  portal_folder_name) value ('Amazon','amazon.com', 'amazon');
+INSERT INTO web_buddy.portals(name, domain,  portal_folder_name) value ('Alibaba','alibaba.com', 'alibaba');
+INSERT INTO web_buddy.portals(name, domain,  portal_folder_name) value ('Deal extreme','dx.com', 'dealextreme');
+INSERT INTO web_buddy.portals(name, domain,  portal_folder_name) value ('Magalu','magazineluiza.com.br', 'magalu');
+
+
+CREATE TABLE IF NOT EXISTS web_buddy.customerPortals (
+  id_customer_portals int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  id_portal int(11) NOT NULL,
+  id_customer int(11) NOT NULL,
+  PRIMARY KEY (id_customer_portals)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Relacion de clientes y portales';
+
+
+CREATE TABLE IF NOT EXISTS web_buddy.customerPortals (
+  id_customer_users int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  id_user int(11) NOT NULL,
+  id_customer int(11) NOT NULL,
+  PRIMARY KEY (id_customer_users)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Relacion de clientes y usuarios';
+
+
+CREATE TABLE IF NOT EXISTS web_buddy.regexDomains (
+  id_regexDomain int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  script_name varchar(100) DEFAULT NULL COMMENT '',
+  regex varchar(500) DEFAULT NULL COMMENT 'Expresiones Regulares para validar el dominio',
+  id_portal int(11) NOT NULL,
+  country varchar(500) DEFAULT NULL COMMENT 'Pais',
+  language varchar(500) DEFAULT NULL COMMENT 'Lenguaje',
+  category varchar(500) DEFAULT NULL COMMENT 'tipo de categoria del dominio PORTAL, PRODUCT y LIST',
+  folder_name varchar(500) DEFAULT NULL COMMENT 'nombre de la capeta',
+  PRIMARY KEY (id_regexDomain)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='';
+
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, folder_name)) value ('portal',1,'^(http([s]?):\/\/([w]{3}[.]]?)?instagram.com(([\/]{1}).*)?)$', 'united states', 'multi', 'portal');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, folder_name)) value ('portal',2,'^(http([s]?):\/\/([w]{3}[.]]?)?mercadoli[b|v]re.([a-z]{2,4})(([.]{1}[a-z]{0,4})?)(([\/]{1}).*)?)$', 'Argentina', 'multi', 'portal');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, folder_name)) value ('portal',7,'^(http([s]?):\/\/([w]{3}[.]]?)?magazineluiza.com.br(([\/]{1}).*)?)$', 'Brasil', 'pt', 'portal');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, folder_name)) value ('portal',4,'^(http([s]?):\/\/([w]{3}[.]]?)?amazon.com(([\/]{1}).*)?)$', 'united states', 'multi', 'portal');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, folder_name)) value ('portal',6,'^(http([s]?):\/\/([w]{3}[.]]?)?dx.com(([\/]{1}).*)?)$', 'united states', 'multi', 'portal');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, folder_name) value ('portal',5,'^(http([s]?):\/\/([w]{3}[.]]?)?alibaba.com(([\/]{1}).*)?)$', 'united states', 'multi', 'portal');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, folder_name) value ('portal',3,'^(http([s]?):\/\/([w]{3}[.]]?)?aliexpress.com(([\/]{1}).*)?)$', 'united states', 'multi', 'portal');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, category, folder_name) value ('list',1,'^(http([s]?):\/\/([w]{3}[.]]?)?instagram.com\/explore(([\/]{1}).*)?)$', 'united states', 'multi', 'LIST', 'list');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, category, folder_name) value ('product',1,'^(http([s]?):\/\/([w]{3}[.]]?)?instagram.com\/p(([\/]{1}).*)?)$', 'united states', 'multi', 'PRODUCT', 'product');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, category, folder_name) value ('list',7,'^(http([s]?):\/\/([w]{3}[.]]?)?magazineluiza.com.br\/.*(\/l\/)(.*)?)$', 'Brasil', 'pt', 'LIST', 'list');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, category, folder_name) value ('product',7,'^(http([s]?):\/\/([w]{3}[.]]?)?magazineluiza.com.br\/.*(\/p\/)(.*)?)$', 'Brasil', 'pt', 'PRODUCT', 'product');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, category, folder_name) value ('search',7,'^(http([s]?):\/\/([w]{3}[.]]?)?magazineluiza.com.br\/.*(\/.*\/s\/)(.*)?)$', 'Brasil', 'pt', 'LIST', 'list');
+INSERT INTO web_buddy.regexDomains(script_name, id_portal, regex, country, language, category, folder_name) value ('search',7,'^(http([s]?):\/\/(buscar.{1})magazineluiza.com.br\/(.*)?)$', 'Brasil', 'pt', 'LIST', 'list');
+
+
+
+CREATE TABLE IF NOT EXISTS web_buddy.searches (
+  id_search int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  search_name varchar(50) DEFAULT NULL COMMENT 'nombre ',
+  active_search int(11) DEFAULT 1 COMMENT 'busqueda activa',
+  id_user int(11) NOT NULL,
+  PRIMARY KEY (id_search)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabla de Busquedas de casos o posibles casos';
+
+CREATE TABLE IF NOT EXISTS web_buddy.states (
+  id_state int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  name varchar(50) DEFAULT NULL COMMENT 'nombre ',
+  descriptions varchar(500) DEFAULT NULL COMMENT 'descriptions del articulo',
+  PRIMARY KEY (id_state)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabla de estados';
+
+CREATE TABLE IF NOT EXISTS web_buddy.products (
+  id_product int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  title varchar(50) DEFAULT NULL COMMENT 'Titulo del articulo',
+  descriptions varchar(500) DEFAULT NULL COMMENT 'descriptions del articulo',
+  quantity int(9) DEFAULT NULL COMMENT 'Catidad de articulos',
+  url_article int(11) NOT NULL COMMENT 'Clave primaria tabla articulos',
+  id_seller int(11) NOT NULL COMMENT 'Clave primaria tabla Vendedores',
+  id_case int(11) NOT NULL COMMENT 'Clave primaria tabla casos',
+  PRIMARY KEY (id_article)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabla de articulos';
+
+CREATE TABLE IF NOT EXISTS web_buddy.cases (
+  id_case int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  case_date date NOT NULL COMMENT 'Fecha Inicio del Caso',
+  id_state int(11) NOT NULL COMMENT 'Clave primaria tabla estados',
+  PRIMARY KEY (id_case)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='tabla de casos';
+
+
+/**
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MLC', 'www.mercadolibre.cl', 'Chile','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MCR', 'mercadolibre.co.cr', 'Costa Rica','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MSV', 'mercadolibre.com.sv', 'Salvador','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MPE', 'mercadolibre.com.pe', 'Perú','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MBO', 'mercadolibre.com.bo', 'Bolivia','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MPA', 'mercadolibre.com.pa', 'Panamá','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MEC', 'mercadolibre.com.ec', 'Ecuador','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MLV', 'mercadolibre.com.ve', 'Venezuela','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MCO', 'mercadolibre.com.co', 'Colombia','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MLU', 'mercadolibre.com.uy', 'Uruguay','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MLB', 'mercadolivre.com.br', 'Brasil','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MRD', 'mercadolibre.com.do', 'Dominicana','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MGT', 'mercadolibre.com.gt', 'Guatemala','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MNI', 'mercadolibre.com.ni', 'Nicaragua','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MHN', 'mercadolibre.com.hn', 'Honduras','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MLA', 'mercadolibre.com.ar', 'Argentina','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MLM', 'mercadolibre.com.mx', 'México','mercadolibre');
+INSERT INTO web_buddy.portals(name, initials, domain, script_name) value ('Mercado Libre','MPY', 'mercadolibre.com.py', 'Paraguay','mercadolibre');
+*//

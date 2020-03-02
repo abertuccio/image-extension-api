@@ -1,0 +1,616 @@
+{
+	"id": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+	"name": "web buddy",
+	"description": "",
+	"order": [
+		"80e7def7-dbac-f4a7-8ed1-c8b96ddf8726"
+	],
+	"folders": [
+		{
+			"name": "cases",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"order": [
+				"2e4ca3b1-c068-e886-f8e5-cfefd81507be",
+				"8038421a-701b-4672-4f7c-32d062ab1c21"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "f53403bd-aabd-aeb1-1585-533336379f19"
+		},
+		{
+			"name": "customers",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"order": [
+				"692c84a9-f8c7-3b74-afed-878380e11026",
+				"91e752e0-4395-e163-98a6-4b20fe5ed444",
+				"0f429227-7a2a-95d4-bef1-9cd170234b65",
+				"61145aa6-d3e6-7dd1-759a-1d66b901c86e"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "7da275ca-e580-dbb1-29d1-df98ae4b78e1"
+		},
+		{
+			"name": "portals",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"order": [
+				"9ddc7a41-52f9-3645-f667-e3258eae96f3",
+				"e01cd361-54dc-88e1-aa7d-f50215ee9390",
+				"bd74e852-74df-085e-bb52-990a8e8984d4"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "7f940b14-4132-61e4-586c-6982fc3d33d2"
+		},
+		{
+			"name": "sesion",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"order": [
+				"5da27083-2371-9667-7bfd-6a55eae4a4b6",
+				"7d47213d-6d70-cac2-fced-9fc3baaca66d",
+				"cf0955fe-e9fd-c4ae-d413-f1a213e26256"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "04406a61-2e43-017a-d9cb-de38854f12ae"
+		},
+		{
+			"name": "users",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"order": [
+				"6fe2e3bf-67ed-6ea9-6873-4b264558084a",
+				"b5260e17-fad9-db97-5a85-a69d10e2e647",
+				"623c3fd3-5e58-d6dd-b26a-fb93beaf7abf"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "9f85aef4-dae3-9356-0fa2-b7884e77fbb4"
+		}
+	],
+	"folders_order": [
+		"04406a61-2e43-017a-d9cb-de38854f12ae",
+		"7da275ca-e580-dbb1-29d1-df98ae4b78e1",
+		"9f85aef4-dae3-9356-0fa2-b7884e77fbb4",
+		"7f940b14-4132-61e4-586c-6982fc3d33d2",
+		"f53403bd-aabd-aeb1-1585-533336379f19"
+	],
+	"timestamp": 1562244636098,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0f429227-7a2a-95d4-bef1-9cd170234b65",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/customer/portals",
+			"folder": "7da275ca-e580-dbb1-29d1-df98ae4b78e1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567007205551,
+			"name": "customerPortals",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"token\": \"\",\n\t\"id_customer\": \"1\",\n\t\"portals\":[\n\t\t{\n\t\t\t\"id_portal\": \"17\",\n\t\t\t\"name\": \"mercadolibre\",\n\t\t\t\"country\": \"Argentina\"\n\t\t},\n\t\t{\n\t\t\t\"id_portal\": \"18\",\n\t\t\t\"name\": \"mercadolibre\",\n\t\t\t\"country\": \"México\"\n\t\t},\n\t\t{\t\n\t\t\t\"id_portal\": \"1\",\n\t\t\t\"name\": \"instagram\",\n\t\t\t\"country\": \"united states\"\n\t\t},\n\t\t{\t\n\t\t\t\"id_portal\": \"21\",\n\t\t\t\"name\": \"alibaba\",\n\t\t\t\"country\": \"united states\"\n\t\t}]\n}"
+		},
+		{
+			"id": "2e4ca3b1-c068-e886-f8e5-cfefd81507be",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/cases",
+			"folder": "f53403bd-aabd-aeb1-1585-533336379f19",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567003012700,
+			"name": "cases",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"token\": \"\",\n\t\"id_case\": \"51\",\n\t\"id_state\": \"222222\"\n}"
+		},
+		{
+			"id": "5da27083-2371-9667-7bfd-6a55eae4a4b6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/login",
+			"folder": "04406a61-2e43-017a-d9cb-de38854f12ae",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567524961727,
+			"name": "login",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"GABY\",\n\t\"password\": \"123456\"\n}"
+		},
+		{
+			"id": "61145aa6-d3e6-7dd1-759a-1d66b901c86e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/portals",
+			"folder": "7da275ca-e580-dbb1-29d1-df98ae4b78e1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567002877111,
+			"name": "customerPortals",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"token\": \"\",\n\t\"id_portal\": \"1\"\n\t\"portals\":[\n\t\t{\n\t\t\t\"id_portal\": \"17\"\n\t\t},\n\t\t{\n\t\t\t\"id_portal\": \"18\"\n\t\t},\n\t\t{\t\n\t\t\t\"id_portal\": \"1\"\n\t\t},\n\t\t{\t\n\t\t\t\"id_portal\": \"21\"\n\t\t}]\n}"
+		},
+		{
+			"id": "623c3fd3-5e58-d6dd-b26a-fb93beaf7abf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/users/customer",
+			"folder": "9f85aef4-dae3-9356-0fa2-b7884e77fbb4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567011499375,
+			"name": "userCustomer",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"token\": \"e6872b7da4ec4eee988f8a59b7583de4ce13a01c8138b9dd29415c93953e3957ebbb719389178949e2c023326607709095f1c1fcf1a636e1c1b29f0dc31177a1\",\n\t\"user\": {\n\t\t\"id_user\": \"13\",\n\t\t\"username\": \"LUCI\"\n\t},\n\t\"customer\": {\n\t\t\"id_customer\": \"5\",\n        \"company_name\": \"SEDAL\"\n\t}\n}"
+		},
+		{
+			"id": "692c84a9-f8c7-3b74-afed-878380e11026",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/customer?token=c01d546d5a76946a30b3e57147037b813ff061d5fef0a9cdf25762fd1a5de0e647af793cfbf159e4ee878b253ad4d682711d08ce4607160194d04c5fe92782ac",
+			"folder": "7da275ca-e580-dbb1-29d1-df98ae4b78e1",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "c01d546d5a76946a30b3e57147037b813ff061d5fef0a9cdf25762fd1a5de0e647af793cfbf159e4ee878b253ad4d682711d08ce4607160194d04c5fe92782ac",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567524977525,
+			"name": "customer",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"JLOBASSO\",\n\t\"password\": \"123456\"\n}"
+		},
+		{
+			"id": "6fe2e3bf-67ed-6ea9-6873-4b264558084a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/users?token=9a4132540ece82a4e3380ea8cde81604473c9325720d830fb5255bf8cc7c145c13f234c72877fc78da937c140f4e5cfb912a1efde07e8263101d2c7f638a8ed0",
+			"folder": "9f85aef4-dae3-9356-0fa2-b7884e77fbb4",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "9a4132540ece82a4e3380ea8cde81604473c9325720d830fb5255bf8cc7c145c13f234c72877fc78da937c140f4e5cfb912a1efde07e8263101d2c7f638a8ed0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567007645562,
+			"name": "users",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\": \"JLOBASSO\",\n\t\"password\": \"123456\"\n}"
+		},
+		{
+			"id": "7d47213d-6d70-cac2-fced-9fc3baaca66d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/logout?token=1d5a22da5fe2fb20ade12f63efcd746687218383df2996fcb723e5710e17d7a6de2688b56763b1a67cda1c7f9a9f0b1db357e9c38f2673313fc43b22e27638ce",
+			"folder": "04406a61-2e43-017a-d9cb-de38854f12ae",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "1d5a22da5fe2fb20ade12f63efcd746687218383df2996fcb723e5710e17d7a6de2688b56763b1a67cda1c7f9a9f0b1db357e9c38f2673313fc43b22e27638ce",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1566488691959,
+			"name": "logout",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "7d47213d-6d70-cac2-fced-9fc3baaca66d",
+			"rawModeData": "{\n\t\"username\": \"JLOBASSO\",\n\t\"password\": \"123456\"\n}"
+		},
+		{
+			"id": "8038421a-701b-4672-4f7c-32d062ab1c21",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3000/cases/?token=dd18b1a616e8e1424c3794b033109771d8858f8beb99df65c35726894169428f3a9b5760a38528aabb0bcd65f917c88ab2873fd012ef3a807d8d215b8512c3d2",
+			"folder": "f53403bd-aabd-aeb1-1585-533336379f19",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "dd18b1a616e8e1424c3794b033109771d8858f8beb99df65c35726894169428f3a9b5760a38528aabb0bcd65f917c88ab2873fd012ef3a807d8d215b8512c3d2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1566411517196,
+			"name": "cases",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "8038421a-701b-4672-4f7c-32d062ab1c21"
+		},
+		{
+			"id": "80e7def7-dbac-f4a7-8ed1-c8b96ddf8726",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3000/profile/?token=035fc9091a9f55c30614b67a0f817adca7970f0b9737a1829c875ba954032c6ee87cd4f3e6d7403710f3497adaa9648fa18d1fe545cfecd8f484009bb661b565",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "035fc9091a9f55c30614b67a0f817adca7970f0b9737a1829c875ba954032c6ee87cd4f3e6d7403710f3497adaa9648fa18d1fe545cfecd8f484009bb661b565",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567524980992,
+			"name": "profile",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": []
+		},
+		{
+			"id": "91e752e0-4395-e163-98a6-4b20fe5ed444",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/customer",
+			"folder": "7da275ca-e580-dbb1-29d1-df98ae4b78e1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567524973074,
+			"name": "customer",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"token\": \"c01d546d5a76946a30b3e57147037b813ff061d5fef0a9cdf25762fd1a5de0e647af793cfbf159e4ee878b253ad4d682711d08ce4607160194d04c5fe92782ac\",\n\t\"company_name\": \"magalu\",\n\t\"Legal_contact_name\": \"gabriel Pascualini\",\n\t\"country\": \"Brasil\",\t\n\t\"email\": \"magalu@magazineluiza.com.br\"\n}"
+		},
+		{
+			"id": "9ddc7a41-52f9-3645-f667-e3258eae96f3",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3000/portals/?token=dd18b1a616e8e1424c3794b033109771d8858f8beb99df65c35726894169428f3a9b5760a38528aabb0bcd65f917c88ab2873fd012ef3a807d8d215b8512c3d2",
+			"folder": "7f940b14-4132-61e4-586c-6982fc3d33d2",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "dd18b1a616e8e1424c3794b033109771d8858f8beb99df65c35726894169428f3a9b5760a38528aabb0bcd65f917c88ab2873fd012ef3a807d8d215b8512c3d2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567007300133,
+			"name": "portals",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": []
+		},
+		{
+			"id": "b5260e17-fad9-db97-5a85-a69d10e2e647",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/users",
+			"folder": "9f85aef4-dae3-9356-0fa2-b7884e77fbb4",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567524682970,
+			"name": "users",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"rawModeData": "{\n\t\"token\": \"c01d546d5a76946a30b3e57147037b813ff061d5fef0a9cdf25762fd1a5de0e647af793cfbf159e4ee878b253ad4d682711d08ce4607160194d04c5fe92782ac\",\n\t\"username\": \"GABY\",\n\t\"password\": \"123456\",\t\n\t\"first_name\": \"Gabriel\",\n\t\"last_name\": \"Pascualini\",\n\t\"email\": \"gabriel@pulpou.com\"\n}"
+		},
+		{
+			"id": "bd74e852-74df-085e-bb52-990a8e8984d4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/portals",
+			"folder": "7f940b14-4132-61e4-586c-6982fc3d33d2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567002766266,
+			"name": "portals",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "bd74e852-74df-085e-bb52-990a8e8984d4",
+			"rawModeData": "{\n\t\"token\": \"\",\n\t\"id_portal\": \"\",\n}"
+		},
+		{
+			"id": "cf0955fe-e9fd-c4ae-d413-f1a213e26256",
+			"headers": "",
+			"headerData": [],
+			"url": "localhost:3000/token/?token=b71baa72ca9e5cbb007cce982e5a57a5880bbaac1c7390eaa8452e5ab98a66e2d95db40a604b851d728554d88f22de9eb3c3c69f63a6cb09185af73363ff67fa",
+			"folder": "04406a61-2e43-017a-d9cb-de38854f12ae",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "b71baa72ca9e5cbb007cce982e5a57a5880bbaac1c7390eaa8452e5ab98a66e2d95db40a604b851d728554d88f22de9eb3c3c69f63a6cb09185af73363ff67fa",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1566581600253,
+			"name": "token",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "cf0955fe-e9fd-c4ae-d413-f1a213e26256"
+		},
+		{
+			"id": "e01cd361-54dc-88e1-aa7d-f50215ee9390",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3000/portals",
+			"folder": "7f940b14-4132-61e4-586c-6982fc3d33d2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1567002780641,
+			"name": "portals",
+			"description": "",
+			"collectionId": "51f67f0c-cb1f-2c6f-3cac-62f701d7a223",
+			"responses": [],
+			"isFromCollection": true,
+			"collectionRequestId": "e01cd361-54dc-88e1-aa7d-f50215ee9390",
+			"rawModeData": "{\n\t\"token\": \"\",\n\t\"name\": \"\",\n\t\"initials\": \"\",\n\t\"country\": \"\",\n\t\"url\": \"https://.............\"\n}"
+		}
+	]
+}

@@ -1,0 +1,163 @@
+ 
+INSTAGRAM
+language
+https://www.instagram.com/
+
+listado
+https://www.instagram.com/explore/
+
+detalle
+https://www.instagram.com/p/
+
+
+// https://www.instagram.com/explore/tags/lamparascolgantes/
+
+--------------------------------------------------
+MERCADOLIBRE
+language
+https://www.mercadolibre.com.ar/
+https://www.mercadolivre.com.br/
+..
+
+listado
+https://listado.mercadolibre.com.ar/
+https://lista.mercadolivre.com.br/
+..
+
+detalle
+https://articulo.mercadolibre.com.ar/   
+https://produto.mercadolivre.com.br/
+..
+
+// https://deportes.mercadolibre.com.ar/
+// https://ofertas.mercadolibre.com.ar/
+// https://www.mercadolibre.com.ar/moda/
+// https://www.mercadolibre.com.mx/perfil/
+// https://esportes.mercadolivre.com.br/
+// https://www.mercadolivre.com.br/ofertas/
+// https://www.mercadolivre.com.br/moda/
+// https://www.mercadolivre.com.br/perfil
+z
+
+--------------------------------------------------
+DEALEXTREME
+language
+https://www.dx.com/
+https://www.dx.com/es/
+https://www.dx.com/pt/
+
+listado
+https://www.dx.com/c/
+https://www.dx.com/es/c/
+https://www.dx.com/pt/c/
+
+detalle
+https://www.dx.com/p/
+https://www.dx.com/p/
+https://www.dx.com/p/
+
+
+--------------------------------------------------
+ALIEXPRESS
+language
+https://www.aliexpress.com/
+https://es.aliexpress.com/
+https://pt.aliexpress.com/
+
+listado
+https://www.aliexpress.com/premium/category/
+https://es.aliexpress.com/premium/category/
+https://pt.aliexpress.com/premium/category/
+
+detalle
+https://www.aliexpress.com/item/
+https://es.aliexpress.com/item/
+https://pt.aliexpress.com/item/
+
+
+//https://campaign.aliexpress.com/wow/gf/
+
+// https://sale.aliexpress.com/
+// https://sale.aliexpress.com/es/
+// https://sale.aliexpress.com/country@AR/es/__pc/
+// https://sale.aliexpress.com/pt/
+// https://sale.aliexpress.com/country@BR/pt/
+// https://sale.aliexpress.com/pt/__pc/
+// https://flashdeals.aliexpress.com/
+// https://plaza.aliexpress.com/
+
+--------------------------------------------------
+ALIBABA
+language
+https://www.alibaba.com/
+https://spanish.alibaba.com/
+https://portuguese.alibaba.com/
+
+listado
+https://www.alibaba.com/products/
+https://spanish.alibaba.com/products/
+https://portuguese.alibaba.com/products/
+
+detalle
+https://www.alibaba.com/product-detail/
+https://spanish.alibaba.com/product-detail/
+https://portuguese.alibaba.com/product-detail/
+
+// https://portuguese.alibaba.com/catalog/
+// https://spanish.alibaba.com/picture/
+// https://spanish.alibaba.com/catalog/
+// https://www.alibaba.com/trade/
+// https://activity.alibaba.com/sale/
+
+--------------------------------------------------
+AMAZON
+language
+https://www.amazon.com/
+listado
+https://www.amazon.com/b/
+https://www.amazon.es/b?
+https://www.amazon.com/s/
+https://www.amazon.com/s?
+
+detalle
+get => language=en_US
+get => language=es_US
+get => language=pt_BR
+
+--------------------------------------------------
+TIENDAMIA
+language
+https://tiendamia.com/ar
+https://tiendamia.com/br
+
+listado
+https://tiendamia.com/ar/producto
+https://tiendamia.com/br/producto
+
+detalle
+https://tiendamia.com/ar/search
+https://tiendamia.com/br/search
+
+
+--------------------------------------------------
+EBAY
+language
+https://www.ebay.com/
+https://www.ebay.com.ar/
+https://www.ebay.es/
+https://www.ebay.com.au/
+
+listado
+https://www.ebay.com/b/
+https://ar.ebay.com/b/
+https://www.ebay.es/b/
+https://www.ebay.com.au/b/
+
+https://www.ebay.com/sch/
+https://www.ebay.es/sch/
+https://www.ebay.com.au/sch/
+
+detalle
+https://www.ebay.com/itm/
+https://www.ebay.es/itm/
+https://www.ebay.com.au/itm/
